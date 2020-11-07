@@ -1,3 +1,13 @@
+@media (max-width: 400px) {
+    #header {
+        display: flex;
+    }
+
+    #header-img, #nav-bar {
+        flex-direction: column;
+    }
+}
+
 header {
     top: 0;
     position: fixed;
