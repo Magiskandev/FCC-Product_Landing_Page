@@ -1,36 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FCC Product Landing Page</title>
-    </head>
-    <body>
-        <div id="container">
-        <header id="header">
-            <img src="" alt="logo" id="header-img">
-            <nav id="nav-bar">
-                <a href="#caracteristicas" class="nav-link">Características</a>
-                <a href="#detalles" class="nav-link">Detalles</a>
-                <a href="#precio" class="nav-link">precio</a>
-            </nav>
-        </header>
-        <main>
-            <form action="https://www.freecodecamp.com/email-submit" id="form">
-                <input type="email" id="email" placeholder="Correo electrónico" required>
-                <input type="submit" id="submit" name="submit" value="Enviar">
-            </form>
-        </main>
-        <section id="caracteristicas">
 
-        </section>
-        <section id="detalles">
-            <video src="" id="video"></video>
-        </section>
-        <section id="precio">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Product Landing Page</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  </head>
 
-        </section>
+  <body>
+
+    <div id="container">
+
+      <header id="header" class="">
+        <a href="/" class="brand">
+          <img src="images/logo.png" alt="logo" id="header-img">
+          <p class="brand-title">HOGWARTS ACADEMY</p>
+        </a>
+
+        <nav id="nav-bar">
+          <a href="#caracteristicas" class="nav-link">Características</a>
+          <a href="#planes" class="nav-link">Planes</a>
+          <a href="#experimenta" class="nav-link">Experimenta</a>
+        </nav>
+      </header>
+
+      <main>
+        <h1 class="titulo">Bienvenido a <span>HOGWARTS ACADEMY</span></h1>
+        <p>La mejor escuela de magia del mundo.</p>
+        <p>Ingresa tus datos y te daremos descuentos para cada plan académico.</p>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input type="text" id="name" placeholder="Ingresa tu nombre" name="name" required>
+          <input type="email" id="email" placeholder="Ingresa tu correo electrónico" name="email" required>
+          <input type="submit" id="submit" name="submit" value="Enviar">
+        </form>
+      
+      <div class="center">
+      <section id="caracteristicas">
+        <div class="contenedor-caracteristicas">
+          
+          <div class="texto">
+            <h2>Los mejores maestros</h2>
+            <p>En Hogwarts Academy te brindamos a los maestros más experimentados para que tengas el mejor proceso.</p>
+          </div>
         </div>
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    </body>
+
+        <div class="contenedor-caracteristicas">
+          
+          <div class="texto">
+            <h2>Las mejores instalaciones</h2>
+            <p>Tendrás los mejores laboratorios de magia para que consigas las pócimas y conjuros más avanzados.</p>
+          </div>
+        </div>
+
+        <div class="contenedor-caracteristicas">
+          
+          <div class="texto">
+            <h2>Acceso exclusivo</h2>
+            <p>Tendrás acceso exclusivo a las conferencias y seminarios de los más grandes magos del mundo.</p>
+          </div>
+        </div>
+
+        <div class="contenedor-caracteristicas">
+          
+          <div class="texto">
+            <h2>Experencias inigualables</h2>
+            <p>Podrás disfrutar de expediciones a zonas encantadas y conocer a las creaturas mágicas más fantasticas.</p>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="planes">
+        <div class="contenedor-tarjeta">
+          <p>Básico</p>
+          <p class="price">$ 500</p>
+          <p>Acceso a todos los laboratorios</p>
+          <p>Guías personalizadas</p>
+          <p>Clases Extra</p>
+          <button>Conozca más</button>
+        </div>
+
+        <div class="contenedor-tarjeta">
+          <p>Plateado</p>
+          <p class="price">$ 1.000</p>
+          <p>Lo del básico, más:</p>
+          <p>Acceso a seminarios gratuitamente</p>
+          <p>Material espeializado</p>
+          <button>Conozca más</button>
+        </div>
+
+        <div class="contenedor-tarjeta">
+          <p>Dorado</p>
+          <p class="price">$ 1.500</p>
+          <p>Lo del plateado, más:</p>
+          <p>Asesorías con expertos internacionales</p>
+          <p>Certificados por todos los seminarios y cursos</p>
+          <button>Conozca más</button>
+        </div>
+      </section>
+      
+      <section id="experimenta">
+        <video src="video/video.mp4" id="video" controls autoplay>
+        </video>
+      </section>
+
+    </main>
+    
+    <footer>
+      <p>Alejandro Osorio</p>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+
 </html>

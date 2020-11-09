@@ -1,18 +1,243 @@
-@media (max-width: 400px) {
-    #header {
-        display: flex;
-    }
-
-    #header-img, #nav-bar {
-        flex-direction: column;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#container {
+body {
+    font-family: 'Itim', serif;
+    font-size: 25px;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: purple;
+    z-index: 10;
+}
+
+.brand {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 35px;
+}
+
+.brand-title {
+    color: white;
+    text-decoration: none;
+}
+
+#header-img {
+    width: 150px;
+}
+
+a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 15px;
+    padding: 2px;
+}
+
+.nav-link:hover {
+    color: aqua;
+    border: 2px solid whitesmoke;
+}
+
+#nav-bar {
+    margin-right: 5%;
+}
+
+.logo {
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto 0 5%;
+}
+
+main {
+    margin-top: 100px;
+    padding-top: 20px;
+    text-align: center;
+    background: lightblue;
+}
+
+.titulo {
+    margin-bottom: 0;
+}
+
+main > h1 > span {
+    color: darkgreen;
+    font-size: 40px;
+}
+
+#form {
+    height: 200px;
+    width: 40%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+#name, #email {
+    outline: none;
+    width: 90%;
+    height: auto;
+    border: 2px solid lightgray;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 10px;
+    z-index: 2;
+}
+
+#email:focus {
+    border:2px solid greenyellow;
+}
+
+.center {
+    width: 80%;
+    margin: auto;
+}
+
+.contenedor-caracteristicas {
     display: flex;
 }
 
-header {
+.logo-caracteristicas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.texto {
+    text-align: left;
+}
+
+.texto > h2 {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.texto > p {
+    font-size: 20px;
+}
+
+#planes {
+    display: flex;
+    margin: 10% auto;
+}
+
+.contenedor-tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: steelblue;
+    width: 60%;
+    border: none;
+    padding: 2%;
+    border-radius: 20px;
+    background: lightseagreen;
+    margin: 5% 5%;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.price {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+[type="submit"] {
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid gray;
+    font-weight: 600;
+    background: lightsalmon;
+    border-radius: 30px;
+    margin-top: 10px;
+    color: black;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+  
+[type="submit"]:hover {
+    border: 2px solid #fcbf49;
+    color: lightseagreen;
+}
+  
+button {
+    color: #d62828;
+    font-size: 20px;
+    background: transparent;
+    padding: 15px 20px;
+    border-radius: 10px;
+    position: relative;
+    border: none;
+    overflow: hidden;
+    transition: color 1s ease-in;
+  }
+  
+button::before {
+    z-index: -1;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #d62828;
+    position: absolute;
+    left: -1px;
     top: 0;
-    position: fixed;
+    transform: rotate(-90deg);
+    transform-origin: 0 100%;
+    transition: transform 1s ease-in;
+}
+  
+button:hover::before {
+    transform: rotate(0deg);
+}
+  
+button:hover {
+    color: #003049;
+}
+  
+video {
+    border-radius: 20px;
+    box-shadow: 0.2rem 0.2rem .5rem rgb(107, 101, 101),
+      0.1rem 0.1rem 1rem rgb(187, 174, 174);
+    max-width: 700px;
+    width: 100%;
+    outline: none;
+    margin-bottom: 20px;
+}
+  
+footer {
+    color: darkslateblue;
+    text-align: center;
+    padding: 5% 0 1%;
+    font-size: 25px;
+    opacity: 0.6;
+    background: lightslategray;
+}
+
+@media (min-width: 800px) {
+    #precio {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #precio > div:nth-child(2) {
+      margin: 2% auto;
+    }
+    .center {
+      width: 70%;
+    }
 }
